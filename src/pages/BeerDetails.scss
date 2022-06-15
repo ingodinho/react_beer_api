@@ -1,0 +1,47 @@
+.beer-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding: 5rem 10%;
+
+    img{
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    h5 {
+        margin-top: 5rem;
+        line-height: 1.2;
+        font-weight: 400;
+    }
+
+    h4 {
+        color: var(--clr-prm);
+        margin-bottom: 2.5rem;
+        text-align: left;
+    }
+
+    p {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        margin-top: 1.5rem;
+        margin-bottom: 5rem;
+    }
+}
+
+.beer-details__info {
+    display: flex;
+    justify-content: space-between;
+    color: #33333390;
+    font-size: 1.3rem;
+}
+
+.beer-details__btn {
+    align-items: center;
+    height: 5.5rem;
+    width: 5.5rem;
+    svg {
+        stroke: #fff;
+        fill: #fff;
+    }
+}

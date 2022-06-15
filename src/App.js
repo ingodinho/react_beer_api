@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Beerlist from './pages/Beerlist';
+import Home from './pages/Home';
+import {Routes, Route} from 'react-router-dom';
+import BeerDetails from './pages/BeerDetails';
+import Navbar from './components/Navbar';
+import {useLocation} from 'react-router-dom';
 
 function App() {
+  
+  const {pathname} = useLocation();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/beers' element={<Beerlist/>}/>
+        <Route path='/beer/:id' element={<BeerDetails/>}/>
+      </Routes>
+      {pathname !== '/' ? <Navbar/> : ''}
     </div>
   );
 }

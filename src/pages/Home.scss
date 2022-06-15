@@ -1,0 +1,31 @@
+.home {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 5vh;
+    padding: 5vh 5%
+}
+
+.home__container {
+    img {
+        width: 100%;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    h3 {
+        background-color: var(--clr-prm);
+        padding: 1rem 0rem;
+        color: var(--clr-white);
+    }
+
+    p {
+        font-size: 1.8rem;
+    }
+}
+
+.home__container__flex {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --clr-prm: #FFCA41;
+  --clr-white: #fff;
+  --ff: 'Roboto Slab', serif;
+}
+
+body {
+  font-family: var(--ff);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+// ========================================================
+      //                    FONTS
+// ========================================================
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 5.2rem;
+}
+
+.beer-item p {
+  font-size: 1.5rem;
+}
+
+
+// ========================================================
+      //                    GENERAL COMPONENTS
+// ========================================================
+
+button {
+  width: 10rem;
+  height: 3rem;
+  background-color: var(--clr-prm);
+  border-radius: 40px;
+  border: none;
+  color: var(--clr-white);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+// ========================================================
+      //                    NAVBAR
+// ========================================================
+
+.navbar {
+  background-color: var(--clr-prm);
+  text-align: center;
+  padding: 1rem 0;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+
+  svg {
+    width: 5rem;
+    stroke: #000;
+    fill: #fff;
+  }
+}
